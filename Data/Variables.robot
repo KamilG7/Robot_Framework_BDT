@@ -14,6 +14,9 @@ ${BROWSER} =          chrome
 #Landing
 ${URL_HOME_PAGE} =                    https://automationteststore.com/
 ${LANDING_CONFIRMATION_LOCATOR} =     xpath=//span[contains(text(), 'Featured')]
+${SEARCH_VALUE} =                     CREAM
+${SEARCH_BAR_LOCATOR} =               xpath=//input[@name='filter_keyword']
+${SEARCH_BUTTON_LOCATOR} =            xpath=//div[@class='button-in-search']
 
 #Login Registration
 ${LOGIN_REGISTRATION_LINK} =                     xpath=//a[contains(text(), 'Login or register')]
@@ -62,6 +65,25 @@ ${REGISTRATION_REGION} =                 2631
 ${REGISTRATION_ZIPCODE} =                42200
 ${REGISTRATION_COUNTRY} =                170
 ${REGISTRATION_MESSAGE} =                YOUR ACCOUNT HAS BEEN CREATED!
+
+#SEARCH RESULTS
+${SEARCH_RESULTS_LOCATOR} =         xpath=//a[@class='prdocutname'][contains(@title, ' ')]
+${SEARCH_EMPTY_LOCATOR} =           xpath=//div[contains(text(), 'no product')]
+${SEARCH_EMPTY_MESSAGE} =           There is no product that matches the search criteria
+${MULTIPLE_KEYWORDS_VALUE} =        CK ONE
+${SEARCH_ADD_FIRST} =               xpath=(//a[@class='productcart'])[1]
+
+#CART
+${CART_BUTTON} =                    xpath=(//a[@class='dropdown-toggle'])[2]
+${CART_CONFIRMATION_LOCATOR} =      xpath=//span[@class='maintext']/i[@class='fa fa-shopping-cart fa-fw']
+${CART_PRODUCT_LIST} =              xpath=//i[@class='fa fa-trash-o fa-fw']
+${CART_PRODUCT_QUANTITY} =          xpath=//table[@class='table table-striped table-bordered']//input
+${CART_REFRESH_BUTTON} =            xpath=//button[@id='cart_update']
+${CART_CHANGE_QUANTITY} =           2
+${CART_REMOVE_ITEM} =               xpath=//a/i[@class='fa fa-trash-o fa-fw']
+${CART_EMPTY_LOCATOR} =             xpath=//div[@class='contentpanel']
+${CART_EMPTY_TEXT} =                Your shopping cart is empty!
+
 
 
 

@@ -14,7 +14,7 @@ Suite Teardown
 *** Test Cases ***
 Login With Valid Credentials
     [Documentation]     Login should suceed with valid credentials
-    [Tags]              S_1001   TC_1001
+    [Tags]              S_1001   TC_1001    Login
     Given User is on Login Page
     And Sign In button is displayed
     When User enters their Username and Password
@@ -24,7 +24,7 @@ Login With Valid Credentials
 
 Incorrect Login Attempts Should Dispplay Correct Errors
     [Documentation]    Incorrect login attempts should trigger correct errors to be displayed
-    [Tags]             S_1002, TC_1002, TC_1003, TC_1004, TC_1005, TC_1006, TC_1007
+    [Tags]             S_1002  TC_1002  TC_1003  TC_1004  TC_1005  TC_1006  TC_1007   Login
     [Template]         Failed Login Attempts Should Dispplay Correct Errors
     ${INCORRECT_LOGIN}        ${random_password_pylib}      ${LOGIN_ERROR_INCORRECT}
     ${random_login_pylib}     ${INCORRECT_PASSWORD}         ${LOGIN_ERROR_INCORRECT}

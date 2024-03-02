@@ -46,18 +46,12 @@ Scenario: [S_1004, TC_1009] Perform a Basic Search
   When User enter "cream" into the search bar
   Then User should see relevant search results for creams
 
-Scenario: [S_1005, TC_1010] Perform search with price filter
-  Given User is on the homepage of the e-commerce site
-  When User enters 'phrase' in search bar
-  And User filter the search results by price range $0-$100
-  Then User should see only records in price range
-
-Scenario: [S_1006, TC_1011] Perform an Empty Search
+Scenario: [S_1005, TC_1010] Perform an Empty Search
   Given User is on the homepage of the e-commerce site
   When User submit an empty search query
   Then User should see a message indicating that no search results were found
 
-Scenario: [S_1007, TC_1012] Search with Multiple Keywords
+Scenario: [S_1006, TC_1011] Search with Multiple Keywords
     Given User is on the homepage of the e-commerce site
     When User enters "shaving cream" into the search bar
     Then User should see relevant search results for shaving cream
@@ -66,17 +60,17 @@ Scenario: [S_1007, TC_1012] Search with Multiple Keywords
 
 Feature: Shopping Cart Functionality on E-commerce Site
 
-Scenario: [S_1008, TC_1013] Add Product to Cart
+Scenario: [S_1007, TC_1012] Add Product to Cart
   Given User is viewing a product
   When User click on the "Add to Cart" button
   Then the product should be added to Users cart
 
-Scenario: [S_1009, TC_1014] Update Quantity of Product in Cart
+Scenario: [S_1008, TC_1013] Update Quantity of Product in Cart
   Given User added products to cart
   When User increase the quantity of a product to 2
   Then the quantity of the product in Users cart should be updated to 2
 
-Scenario: [S_1010, TC_1015] Remove Product from Cart
+Scenario: [S_1009, TC_1014] Remove Product from Cart
   Given User have products in cart
   When User click on the remove button next to a product
   Then the product should be removed from cart

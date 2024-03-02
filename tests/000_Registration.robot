@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation           Test cases for "Main Site" tab
+Documentation           Test cases for Registration Form
 Resource                ../Resources/EcommerceApp.robot
 Resource                ../resources/common.robot
 Resource                ../data/Variables.robot

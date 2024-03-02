@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation               Layer needed to read data from external files
+Documentation               Layer needed to read data from external custom libs
 Library                     ../Ext_Lib/CSVReader.py
 Library                     ../Ext_Lib/RandomCredentials.py
 
